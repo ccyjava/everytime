@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/taskviewgroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskListActivity" >
+
+    <ListView
+        android:id="@+id/tasklist_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/buttongroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/addtask_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加任务" >
+        </Button>
+
+        <Button
+            android:id="@+id/addtask_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加任务" >
+        </Button>
+
+        <Button
+            android:id="@+id/addtask_button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加任务" >
+        </Button>
+    </LinearLayout>
+
+    <cn.edu.pku.everytime.ui.EveryBar
+        android:id="@+id/mybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="True" />
+
+</RelativeLayout>

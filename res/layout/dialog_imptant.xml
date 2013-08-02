@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg" >
+
+    <ImageView
+        android:id="@+id/dialog_title_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="True"
+        android:background="@drawable/dialog_imptant_title" />
+
+    <ImageButton
+        android:id="@+id/dialog_imptant_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/dialog_title_image"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/dialog_cancle_image" />
+
+    <ImageButton
+        android:id="@+id/dialog_imptant_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dialog_title_image"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/dialog_ok_image" />
+
+    <cn.edu.pku.everytime.ui.imptant_bar
+        android:id="@+id/dialog_imptant"
+        android:layout_width="382px"
+        android:layout_height="90px"
+        android:layout_below="@id/dialog_imptant_ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15px"
+        android:tag="imptant" />
+    <!-- android:background="@drawable/dialog_text_image" -->
+
+    <ImageView
+        android:id="@+id/image_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_imptant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37px"
+        android:background="@drawable/dialog_imptant_bar" />
+
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dialog_percent" />
+
+    <TextView
+        android:id="@+id/timeleft_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="True"
+        android:layout_marginBottom="20px"
+        android:layout_marginRight="60px"
+        android:text="75"
+        android:textColor="#FF0033"
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/timeleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="True"
+        android:layout_marginBottom="5px"
+        android:text="23小时45分"
+        android:textColor="#FFFF00"
+        android:textSize="13sp" />
+
+</RelativeLayout>

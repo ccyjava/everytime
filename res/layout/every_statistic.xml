@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600px" >
+
+
+
+    <RadioGroup
+        android:layout_width="68px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="145px"
+        android:layout_marginLeft="20px"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/statistic_btn_score"
+            style="@style/everybar_button"
+            android:background="@drawable/statistic_score_selector"
+            android:checked="True" />
+
+        <RadioButton
+            android:id="@+id/statistic_btn_trend"
+            style="@style/everybar_button"
+            android:background="@drawable/statistic_trend_selector" />
+
+        <RadioButton
+            android:id="@+id/statistic_btn_topic"
+            style="@style/everybar_button"
+            android:background="@drawable/statistic_topic_selector" />
+
+        <RadioButton
+            android:id="@+id/statistic_btn_outline"
+            style="@style/everybar_button"
+            android:background="@drawable/statistic_outline_selector" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/statistic_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="True"
+        android:layout_alignParentTop="True"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/statistic_time" />
+
+    <ImageView
+        android:id="@+id/statistic_chart_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="True"
+        android:layout_alignParentRight="True"
+        android:layout_marginBottom="37px"
+        android:layout_marginRight="25px"
+        android:src="@drawable/statistic_content_score" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="492px"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_task_item"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="True"
+        android:layout_alignParentTop="True"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/task_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="True"
+        android:layout_alignParentLeft="True"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/task_importance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="True"
+        android:layout_toRightOf="@id/task_complete"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg" >
+
+    <ImageView
+        android:id="@+id/dialog_title_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="True"
+        android:background="@drawable/dialog_memo_title" />
+
+    <ImageButton
+        android:id="@+id/dialog_memo_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/dialog_title_image"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/dialog_cancle_image" />
+
+    <ImageButton
+        android:id="@+id/dialog_memo_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dialog_title_image"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/dialog_ok_image" />
+    <EditText
+        android:id="@+id/dialog_text"
+        android:layout_width="364px"
+        android:layout_height="195px"
+        android:layout_below="@id/dialog_memo_ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15px"
+        android:background="@drawable/dialog_text_image"
+        android:gravity="top"
+        android:hint="点此输入备忘"
+        android:maxLength="20"
+        android:padding="15px"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    
+</RelativeLayout>

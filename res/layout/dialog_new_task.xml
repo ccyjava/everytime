@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg" >
+
+    <ImageView
+        android:id="@+id/dialog_title_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="True"
+        android:background="@drawable/dialog_title_image" />
+
+    <ImageButton
+        android:id="@+id/dialog_task_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/dialog_title_image"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/dialog_cancle_image" />
+
+    <ImageButton
+        android:id="@+id/dialog_task_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dialog_title_image"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/dialog_ok_image" />
+
+    <EditText
+        android:id="@+id/dialog_new_task_text"
+        android:layout_width="364px"
+        android:layout_height="195px"
+        android:layout_below="@id/dialog_task_ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15px"
+        android:background="@drawable/dialog_text_image"
+        android:gravity="top"
+        android:hint="点此输入任务描述(20字以内)"
+        android:maxLength="20"
+        android:padding="15px"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/im_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dialog_task_cancle"
+        android:layout_below="@+id/dialog_new_task_text"
+        android:layout_marginTop="20px"
+        android:background="@drawable/dialog_imlable_image" />
+
+    <SeekBar
+        android:id="@+id/im_seekbar"
+        android:layout_width="274px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_new_task_text"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/im_lable"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/dialog_imbar_image"
+        android:thumb="@drawable/dialog_imicon_image" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_drop_button" />
+
+</RelativeLayout>

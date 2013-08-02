@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_everymain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1" >
+
+    <cn.edu.pku.everytime.animation.ScrollPicView
+        android:id="@+id/scrollviewfirst"
+        android:layout_width="480px"
+        android:layout_height="762px" />
+    <cn.edu.pku.everytime.animation.ScrollPicView
+        android:id="@+id/scrollviewSecond"
+        android:layout_width="480px"
+        android:layout_height="762px" />
+
+    <FrameLayout
+        android:id="@+id/every_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="True" />
+
+    <fragment
+        android:id="@+id/every_navigator"
+        android:name="cn.edu.pku.everytime.ui.EveryNavigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="True"
+        android:tag="every_navigator" />
+
+</RelativeLayout>

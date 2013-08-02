@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请输入任务" />
+
+        <EditText
+            android:id="@+id/new_task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <SeekBar
+        android:id="@+id/choose_importance"
+        android:layout_width="match_parent"
+        
+        android:max="100"
+        android:progress="50" />
+
+    <TimePicker
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp" />
+
+    <Button
+        android:id="@+id/add_task"
+        android:layout_width="wrap_content"
+        
+        android:text="添加新任务" />
+
+</TableLayout>
